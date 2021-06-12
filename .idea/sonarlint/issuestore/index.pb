@@ -349,5 +349,3 @@ Q
 !xc-service-api/xc-service-api.iml,4\3\43fbab5d69e105e940f39faf94d40b0a9585587b
 _
 /xc-service-manage-cms/xc-service-manage-cms.iml,a\2\a23e47f441bde0f01a349ba1696568193066a1c5
-‡
-Wxc-framework-common/src/main/java/com/xuecheng/framework/model/response/ResultCode.java,c\f\cf5fccd564bdb7c44da700843b07e145ef43f832
