@@ -2,7 +2,9 @@ package com.xuecheng.manage_cms.service;
 
 import com.xuecheng.framework.domain.cms.CmsPage;
 import com.xuecheng.framework.domain.cms.request.QueryPageRequest;
+import com.xuecheng.framework.domain.cms.response.CmsCode;
 import com.xuecheng.framework.domain.cms.response.CmsPageResult;
+import com.xuecheng.framework.exception.ExceptionCast;
 import com.xuecheng.framework.model.response.CommonCode;
 import com.xuecheng.framework.model.response.QueryResponseResult;
 import com.xuecheng.framework.model.response.QueryResult;
@@ -71,6 +73,11 @@ public class CmsPageService {
         //先查询一下页面是否存在
         CmsPage cmsPage = cmsPageDao.findByPageNameAndSiteIdAndPageWebPath(one.getPageName(),
                 one.getSiteId(),one.getPageWebPath());
+        //处理页面已经存在
+        if (cmsPage!=null){
+            ExceptionCast.cast(CmsCode.CMS_ADDPAGE_EXISTSNAME);
+        }
+
         if(cmsPage==null){
             one.setPageId(null);//添加页面主键由spring data 自动生成
             cmsPageDao.save(one);

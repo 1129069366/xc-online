@@ -36,18 +36,21 @@ public class CmsPageController implements CmsPageControllerApi {
 
     @Override
     @GetMapping("/{pageId}")
+    @ApiOperation("根据Id查询页面")   //页面id是mongodb数据库自动生成的
     public CmsPage findByPageId(@PathVariable("pageId") String pageId) {
         return cmsPageService.findByPageId(pageId);
     }
 
     @Override
     @PostMapping("/add")
+    @ApiOperation("添加页面")
     public CmsPageResult addPage(@RequestBody CmsPage cmsPage) {
         return cmsPageService.add(cmsPage);
     }
 
     @Override
     @PostMapping("/edit/{pageId}")
+    @ApiOperation("修改页面")
     public CmsPageResult update(@PathVariable("pageId") String pageId,@RequestBody CmsPage cmsPage) {
 
         return cmsPageService.update(pageId,cmsPage);
@@ -55,6 +58,7 @@ public class CmsPageController implements CmsPageControllerApi {
 
     @Override
     @DeleteMapping("/del/{pageId}")
+    @ApiOperation("删除页面")
     public ResponseResult delete(@PathVariable("pageId") String pageId) {
         return cmsPageService.delete(pageId);
     }

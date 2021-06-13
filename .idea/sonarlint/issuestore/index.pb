@@ -339,8 +339,6 @@ b
 2.idea/libraries/Maven__org_yaml_snakeyaml_1_19.xml,2\6\2612fcac5779b7dbcdb38b8516054a6d199080c2
 K
 xc-framework-common/pom.xml,d\6\d6fbb8ab393e8af2c6658f21c9cb54f2063c2fc1
-M
-xc-service-manage-cms/pom.xml,6\9\692bfe7ef7348f1478372ee87e0e20286532eb92
 L
 .idea/codeStyles/Project.xml,6\e\6ecd6000a7b6f4a2884412ff19f74193ed089648
 Y
@@ -349,5 +347,25 @@ Q
 !xc-service-api/xc-service-api.iml,4\3\43fbab5d69e105e940f39faf94d40b0a9585587b
 _
 /xc-service-manage-cms/xc-service-manage-cms.iml,a\2\a23e47f441bde0f01a349ba1696568193066a1c5
+
+Oxc-service-manage-cms/src/main/java/com/xuecheng/manage_cms/dao/CmsPageDao.java,2\f\2f08757cbef2aa4b308494567b09cea390860168
+
+Oxc-framework-model/src/main/java/com/xuecheng/framework/domain/cms/CmsPage.java,a\c\acc1045939793616ee56e160d828e152b2260faa
+ê
+`xc-framework-common/src/main/java/com/xuecheng/framework/model/response/QueryResponseResult.java,9\9\99fe8500e39f627e97c92291c422cb124492ee75
+à
+Xxc-framework-common/src/main/java/com/xuecheng/framework/model/response/QueryResult.java,8\6\865ac4111c878f4c233507c901bc7f2e9410deac
+Ö
+Uxc-framework-common/src/main/java/com/xuecheng/framework/model/response/Response.java,0\c\0c67be744744e72e1d466126a212216423ba094a
+ä
+Zxc-service-manage-cms/src/test/java/com/xuecheng/manage_cms/controller/CmsPageDaoTest.java,d\1\d139cc4d28b8abb10fb2ab1e8fe02f771c2a6def
+ã
+[xc-framework-common/src/main/java/com/xuecheng/framework/model/response/ResponseResult.java,b\2\b2bdc24fb227b425026662a195646cdd65679be8
+{
+Kxc-service-api/src/main/java/com/xuecheng/api/cms/CmsPageControllerApi.java,8\2\8250010938794c4be81b8a88fd6d4e94df6c3c1e
+à
+Xxc-framework-model/src/main/java/com/xuecheng/framework/domain/cms/response/CmsCode.java,3\1\31f1800383d897e14bbc2863647543948eb45910
 á
 Wxc-framework-common/src/main/java/com/xuecheng/framework/model/response/ResultCode.java,c\f\cf5fccd564bdb7c44da700843b07e145ef43f832
+ç
+]xc-service-manage-cms/src/main/java/com/xuecheng/manage_cms/controller/CmsPageController.java,6\c\6c18adad060272036d61e3304a01c8d21140cc2d
