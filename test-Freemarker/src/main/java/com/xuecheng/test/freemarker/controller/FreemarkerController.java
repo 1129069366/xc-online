@@ -21,7 +21,7 @@ public class FreemarkerController {
         stu1.setBirthday(new Date());
         //初始化学生2
         Student stu2 = new Student();
-        stu2.setName("小红");
+//        stu2.setName("小红");
         stu2.setMoney(200.1f);
         stu2.setAge(19); //
         stu2.setBirthday(new Date());
