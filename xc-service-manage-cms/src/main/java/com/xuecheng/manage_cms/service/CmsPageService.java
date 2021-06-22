@@ -100,6 +100,12 @@ public class CmsPageService {
         return null;
     }
 
+    /**
+     * 更新界面
+     * @param pageId
+     * @param cmsPage
+     * @return
+     */
     public CmsPageResult update(String pageId, CmsPage cmsPage) {
         CmsPage oldPage = this.findByPageId(pageId);
         if (oldPage!=null){
@@ -109,6 +115,7 @@ public class CmsPageService {
             oldPage.setPageName(cmsPage.getPageName()); //更新访问路径
             oldPage.setPageWebPath(cmsPage.getPageWebPath()); //更新物理路径
             oldPage.setPagePhysicalPath(cmsPage.getPagePhysicalPath());
+            oldPage.setDataUrl(cmsPage.getDataUrl());
             CmsPage newPage = cmsPageDao.save(oldPage);
             return new CmsPageResult(CommonCode.SUCCESS,newPage);
         }
