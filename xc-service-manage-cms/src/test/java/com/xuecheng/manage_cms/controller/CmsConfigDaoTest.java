@@ -18,6 +18,7 @@ public class CmsConfigDaoTest extends TestCase {
     @Autowired
     private RestTemplate restTemplate;
 
+
     @Test
     public void testRestTemplate(){
 
